@@ -113,3 +113,19 @@ a{
     text-decoration: none;
     color: rgb(53, 51, 51);
 }
+
+
+.social-links{
+    list-style: none;
+
+}
+
+.list-item-inline{
+    display: inline-block;
+    font-size: 30px;
+    padding: 1vh 1vw;
+    margin: 2vh 1vw;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
