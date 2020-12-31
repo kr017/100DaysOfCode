@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 450px; */
+    overflow: hidden;
+}
+
+
+.container{
+display: flex;
+
+}
+
+section{
+    padding: 20px;
+}
+.slide{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.slide img{
+    display: inline-block;
+    /* position: relative; */
+}
+
+.slide-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #36ee09;
+    color: white;
+    font-weight: 400;
+    
+    transition: transform 0.3s ease;
+}
+
+.slide:hover .slide-content{
+   
+    transform: translate(0,0); 
+}
+
+.slide-top .slide-content{
+    transform: translate(-100%,100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.facebook-btn{
+    border-radius: 2px;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.facebook-btn-dark{
+    -moz-box-shadow:    inset 0px 1px 20px 0 blue;
+    -webkit-box-shadow: inset 0 1px 0 0 blue;
+    box-shadow:         inset 0 1px 0 0 blue;
+    background-color: #0365c2;
+    color: white;
+    text-shadow: 0 1px 0 #3359a5;
+} */
+
+/* .facebook-btn-dark:active{
+    background-color: #1d4698;
+    border-color: crimson;
+}
+
+.facebook-btn-dark:hover{
+    background-color: #2b54a7;
+    border-color: green;
+
+} */
+
+/* LoVe HAte  Pseudo classes in order */
+/* .facebook-btn-dark:link {color: blue;}
+.facebook-btn-dark:visited {color: #e408e4;}
+.facebook-btn-dark:hover {color: red;}
+.facebook-btn-dark:active {color: yellow;}
+
+
+#result{
+    align-content: center;
+    font-size: 350%;
+    font-weight: 600px; 
+}
+
+.circle{
+    height: 32px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #e408e4;
+    position: absolute;
+    display: inline-block;
+}
+
+*/
+
+
+
+
+
+  
