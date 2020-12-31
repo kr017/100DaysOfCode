@@ -17,7 +17,7 @@ body{
 
 
 .container{
-display: flex;
+display: block;
 
 }
 
@@ -32,6 +32,7 @@ section{
 
 .slide img{
     display: inline-block;
+    border: 2px solid #f7797d;
     /* position: relative; */
 }
 
@@ -44,11 +45,13 @@ section{
     height: 100%;
     width: 100%;
     z-index: 1;
-    background-color: #36ee09;
+    background:#f7797d;
     color: white;
     font-weight: 400;
-    
-    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.8s ease;
 }
 
 .slide:hover .slide-content{
@@ -56,13 +59,23 @@ section{
     transform: translate(0,0); 
 }
 
-.slide-top .slide-content{
-    transform: translate(-100%,100%);
+.slide-top:hover .slide-content{
+    transform: translate(0,-50%);
+}
+
+.slide-bottom:hover .slide-content{
+    transform: translate(0,-100%);
 }
 
 
+.slide-left:hover .slide-content{
+    transform: translate(100%,0%);
+}
 
 
+.slide-right:hover .slide-content{
+    transform: translate(-100%,0%);
+}
 
 
 
