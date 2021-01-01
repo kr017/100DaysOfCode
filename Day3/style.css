@@ -57,4 +57,15 @@ body{
     color: white;
     transform: translate(-50%, -50%);
   }
-  
+
+  .uparrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    color: white;
+    background-color: black;
+    padding: 4vh 3vw;
+    border-radius: 40px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
