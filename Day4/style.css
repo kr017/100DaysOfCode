@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.container{
+     font-size: 18px;
+    width: 500px;
+    height: auto; 
+    position: relative;
+    background: #de6161;
+    color: white;
+    top: 30px;margin: auto;
+    text-align: center;
+    padding: 2vh 2vw;
+    /* margin: 1vh 1vw; */
+    box-shadow: -6px 6px 0 #4b4345;
+   
+    animation: madebyme 2s;    
+}
+
+@keyframes madebyme{
+    25%{background-color: aqua;}
+    50%{background-color: yellowgreen;}
+}
+
+.container:hover{
+    cursor: pointer;
+    animation: onhover 1s;
+}
+
+@keyframes onhover{
+    from{background-color: aqua;}
+    to{background-color: yellowgreen;}
+    25%{transform: translateY(30%) translateX(14%);}
+    50%{transform: translateY(40%);}
+}
+ /* .container::before{
+  
+    position: absolute;
+    display: block;
+    content: "";
+    /* height: 20px; */
+    /* width: 20px; */
+   
+    /* border: solid 12px red; */
+    /* border-left: solid 40px #b34b65;
+    border: solid 40px #b34b65;
+    border-top: solid 40px ;
+
+}  */ 
+
+/* .letter{
+ height: 50px;
+ width: 60px;
+ left: 10px;
+    background: red;
+    z-index: -1;
+    
+} */
+
+
+
+
