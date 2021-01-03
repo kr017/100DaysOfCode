@@ -3,7 +3,7 @@
 
 <div style="text-align:center">
 
-<img  src="../100DaysOfCode/assets/banner2.png">
+<img  src="/assets/banner2.png">
 </div>
 
 [![Build Status](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&logo=appveyor)](https://github.com/kr017/100DaysOfCode) [![Build Status](https://img.shields.io/badge/build-success-yellowgreen?logo=netlify&style=for-the-badge)](https://app.netlify.com/sites/100daysofcode-kiranmate-portfolio/deploys) 
@@ -25,10 +25,10 @@
 
 | Day | Preview of work | Live Demo | Code |
 | :-----:| :------:|-------: |-------: |
-| 01 | ![day1 video](../100DaysOfCode/assets/day1.gif) |[Login Signup Slides]((https://100daysofcode-kiranmate-portfolio.netlify.app/day1/))  |[view](../100DaysOfCode/Day1/index.html) |
-| 02 | ![day2 video](../100DaysOfCode/assets/day2.gif) | [Slide section with Animations]((https://100daysofcode-kiranmate-portfolio.netlify.app/day2/)) |[view ](../100DaysOfCode/Day2/index.html) |
-| 03 | ![day3 video](../100DaysOfCode/assets/day3.gif) | [Slide section with Animations]((https://100daysofcode-kiranmate-portfolio.netlify.app/day3/))   |[view ](../100DaysOfCode/Day2/index.html) |
-| 04 | ![day4 video](../100DaysOfCode/assets/day4.gif) | [Slide section with Animations]((https://100daysofcode-kiranmate-portfolio.netlify.app/day4/))  | [view ](../100DaysOfCode/Day4/index.html) |
+| 01 | ![day1 video](/assets/day1.gif) |[Login Signup Slides](https://100daysofcode-kiranmate-portfolio.netlify.app/day1/)|[view](/Day1/index.html) |
+| 02 | ![day2 video](/assets/day2.gif) |[Slide section with Animations](https://100daysofcode-kiranmate-portfolio.netlify.app/day2/)|[view ](/Day2/index.html) |
+| 03 | ![day3 video](/assets/day3.gif) |[Parallax Effect](https://100daysofcode-kiranmate-portfolio.netlify.app/day3/)|[view ](/Day3/index.html) |
+| 04 | ![day4 video](/assets/day4.gif) |[Animation & Keyframe](https://100daysofcode-kiranmate-portfolio.netlify.app/day4/)| [view ](/Day4/index.html)|
 
 
 
