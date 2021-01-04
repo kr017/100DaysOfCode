@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Source+Serif+Pro:wght@900&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    /* color: white; */
+}
+.container{
+    height: 600px;
+    /* width: 1200px; */
+    /* background: white; */
+    color: black;
+    text-align: center;
+    margin: 20px auto;
+    padding-top:10px;
+}
+
+
+h1{
+    font-family: 'Source Serif Pro', serif;
+    /* font-size: 80px; */
+}
+
+
+h5{
+    font-family: 'Allura', cursive;
+    /* font-size: 40px; */
+}
+
+.heading{
+    /* background-color: white; */
+    color: #6739B7;
+    margin: auto ;
+   
+}
+
+.heading::first-letter{
+    color: white;
+    background-color: #6739B7;
+    border-radius: 50%;
+    padding: 1vh 1.5vw;
+    /* text-align: start; */
+}
+.content{
+    background-color: #f8f9fa; 
+    width: 340px;
+    /* display: flex; */
+    text-align: center;
+    margin: 2% auto;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    /* margin: 4% 5%; */
+}
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 0;
+    margin: 1vh 1vw;
+}
+input{
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    border: 1px solid #0c0b0b;
+    /* display: block; */
+}
+
+
+button{
+    cursor: pointer;
+    padding: 1vh 5vw;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #6739B7;
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+button:hover{
+border: none;
+}
+
+#section2{
+    display: none;
+}
+
+#bill-amount-validattion,#cash-given-validation{
+    font-size: 16px;
+    color: red;
+}
+
+#resultSection{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0dc40d;
+}
+table{
+    margin: auto;
+    width: 175px;
+    display: none;
+    /* border: 1px solid black; */
+border-collapse:collapse;
+box-sizing: border-box;
+box-shadow: 14px 14px 20px #e5ebeb,-14px -14px 20px #e5ebeb;
+
+}
+
+tbody {
+    display: block;
+    
+}
+
+
+tr:first-child{
+    color: white;
+    background-color: #6739B7;
+}
+tr{
+    padding: 10px;
+    color: black;
+    margin: auto;
+}
+
+td,th{
+    padding: 0.5rem;
+}

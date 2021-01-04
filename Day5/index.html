@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        
+        <h1 class="heading">PERSONAL CASHIER</h1>
+        
+        <div class="content">
+        
+        <label for="billamount">Bill Amount</label>
+        <input type="number" name="" id="bill-amount" max="9999999">
+        <label for="" id="bill-amount-validattion"></label>
+        <button class="btn-primary" id="btn-next">NEXT</button>
+
+        <span id="section2">
+        <label for="cashgiven">Cash Given</label>
+        <input type="number" name="" id="cash-given">
+        <label for="" id="cash-given-validation"></label>
+
+        <button class="btn-primary" id="btn-check">Check</button>
+        </span>
+
+        <div id="resultSection">
+            
+        </div>
+        <table id="resultTable">
+        </table>
+        </div>
+    </div>
+    <script>
+        const bill_amount=document.getElementById("bill-amount");
+        const cash_given=document.getElementById("cash-given");
+        const section2=document.getElementById("section2");
+        const btn_next=document.getElementById("btn-next");
+        const btn_check=document.getElementById("btn-check");
+        const div_result=document.querySelector("#resultSection");
+        const table=document.getElementById("resultTable");
+
+        const bill_amount_validattion=document.getElementById("bill-amount-validattion");
+        const cash_given_validation=document.getElementById("cash-given-validation");
+        
+        btn_next.addEventListener("click",showSection2);
+        btn_check.addEventListener("click",handleTransaction);
+
+        let resultSection="";
+        let currencyNotes=[2000,500,100,20,10,5,1];
+        let currencyNotesReturned=[];
+
+        function showSection2() {
+           
+            if(bill_amount.value==""){
+                bill_amount_validattion.innerHTML="Please enter bill Amount first"
+                // alert("Please Enter Bill Amount!");
+            }else  if(bill_amount.value>1000000000){
+                bill_amount_validattion.innerHTML="We don't accept amount more than 1000000000 Please Retry"
+            }else{
+                bill_amount_validattion.innerHTML="";
+                let val=parseInt(bill_amount.value);
+                console.log(typeof val , val);
+
+                btn_next.style.display="none";
+                section2.style.display="block";
+            };
+        }
+    
+        function handleTransaction() {
+            resultSection="";
+            div_result.innerHTML=resultSection;
+
+            row="";
+
+            let billAmount=parseInt(bill_amount.value);
+                let cashGiven=parseInt(cash_given.value);
+            if(!billAmount){
+                bill_amount_validattion.innerHTML="Please enter bill Amount first"
+                table.style.display="none";
+                return;
+            }else if(billAmount>1000000000){
+                bill_amount_validattion.innerHTML="We don't accept amount more than 1000000000 Please Retry"
+                table.style.display="none";
+                return;
+            }else if(cashGiven.value==""){
+                bill_amount_validattion.innerHTML="Please enter Cash Given first"
+                table.style.display="none";
+                return;
+            }else if(cashGiven>1000000000){
+                cash_given_validation.innerHTML="We don't accept amount more than 1000000000 Please Retry"     
+                table.style.display="none";
+                return;
+            }else{
+                bill_amount_validattion.innerHTML="";
+                cash_given_validation.innerHTML="";
+                let diff=cashGiven-billAmount;
+                if(diff==0){
+                resultSection="Payment Done! Nothing to exchange🤩";
+                div_result.innerHTML=resultSection;
+                table.style.display="none";
+               return; }
+                if(billAmount>cashGiven){   
+                resultSection="You need to pay more "+(billAmount-cashGiven)+"💰";  
+                div_result.innerHTML=resultSection;
+                table.style.display="none";
+                return;
+                }else{
+                    table.style.display="block";
+                    currencyNotes.forEach((notes)=>{
+                        currencyNotesReturned.push(Math.floor(diff/notes));
+                        diff=diff%notes;
+                    });
+
+                    let row=`<tr >
+                        <td>NOTE</td>
+                        <td>NOTE COUNT</td>
+                        </tr> `;
+
+                    for (let index = 0; index < currencyNotesReturned.length; index++) {
+                        row+=
+                        `<tr id=${index}>
+                        <td>${currencyNotes[index]}</td>
+                        <td>${currencyNotesReturned[index]}</td>
+                        </tr>`
+                        
+                    } 
+                    resultSection="Transaction details below💰";  
+                    div_result.innerHTML=resultSection;
+                   
+                    table.innerHTML=row;
+                }
+
+               
+
+            }
+
+            currencyNotesReturned=[]; 
+        }
+    
+    </script>
+</body>
+</html>
