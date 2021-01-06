@@ -7,11 +7,20 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
     crossorigin="anonymous" />
-    <script data-require="moment.js@*" data-semver="2.10.2" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+
+
+    <!-- <script 
+    data-require="moment.js@*" 
+    data-semver="2.10.2" 
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"
+    ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone.min.js"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   
 
 <div class="container">
 
@@ -23,13 +32,33 @@
         type="date" 
         name="date-input" 
         id="dob-field"
-        max="06/01/2021">
+        
+        >
+    </section>
+    <section class="story-section">
+        <select name="" id="">
+            <option value="America/New_York">America/New_York"</option>
+            <option value="US/Pacific">US/Pacific</option>
+            <option value="America/New_York">America/New_York"</option>
+            <option value="America/New_York">America/New_York"</option>
+            <option value="America/New_York">America/New_York"</option>
+            <option value="America/New_York">America/New_York"</option>
+
+        </select>
     </section>
     <section id="result-section"></section>
     </div>
 
 </div>
-
+<script>
+    // function todayDate() {
+        let d=new Date().getFullYear()+"-"+"0"+
+              (new Date().getMonth()+1)+"-"+"0"+
+              (new Date().getDate())  ;
+// return d;            
+    // }
+    document.getElementById("dob-field").max=d;
+</script>
     <script src="script.js"></script>
 </body>
 </html>

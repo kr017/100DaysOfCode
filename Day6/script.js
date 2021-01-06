@@ -1,9 +1,12 @@
 
-// var moment = require(moment);
-// import moment from 'moment';
+
 
 const dobField=document.querySelector("#dob-field");
 const resultSection=document.querySelector("#result-section");
+const timezone=`<script 
+data-require="moment-timezone.js@*" 
+src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone.min.js" 
+></script>`
 
 dobField.addEventListener("change",()=>{
     
@@ -30,4 +33,10 @@ var seconds=duration._data.seconds>10?duration._data.seconds:"0"+duration._data.
     <div><span class="head-value" >${seconds}</span><span>Seconds</span></div>
 
     `
+    // debugger
+    // console.log(moment.tz(new Date(), "America/Los_Angeles").format("LLLL"))
 })
+
+
+
+// https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone.min.js
