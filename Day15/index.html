@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>BOX SHADOW GENERATOR</header>
+
+<div class="container">
+    <div class="first-section">
+    
+        <div class="slider-container">
+
+            <label for="top-left">Shadow Color</label>
+            <input type="color" id="colorInShadow"  value="#000000"/>
+            
+            <label for="top-left">Box Color</label>
+            <input type="color" id="colorInBox"  value="#341ce6"/>
+            <br>
+            <label for="top-left">Offset-x</label>
+            <input type="range" name="" min="-50" max="50" id="top-left" class="slider" value="0" > 
+            <span></span>
+
+            <label for="Top Left">offset-y</label>
+            <input type="range" name="" min="-50" max="50" id="top-right" class="slider" value="0" > 
+
+            <label for="Top Left">Blur Radius</label>
+            <input type="range" name="" min="0" max="200" id="bottom-left" class="slider" value="0" > 
+
+            <label for="Top Left">Spread Radius</label>
+            <input type="range" name="" min="-50" max="50" id="bottom-right" class="slider" value="0"> 
+        
+
+        </div>
+    </div>
+
+    <div class="second-section">
+
+        <div class="content">
+            <div id="demo-div">
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
