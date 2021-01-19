@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>LINEAR COLOR GRADIENT GENERATOR</header>
+
+<div class="container">
+    <div class="first-section">
+    
+        <div class="slider-container">
+
+            <div>
+            <label for="top-left">Direction (Degree)</label>
+
+            <input type="range" name="" min="0" max="360" id="direction" class="slider" value="180" > 
+
+            <label for="top-left">Select Count for Colors</label>
+            <select id="color-count" onchange="handleChange()">
+                <option value="2" selected="selected">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+
+            </select>
+            </div>
+
+            <div id="div1-color">
+            <label for="top-left">Color 1</label>
+            <input type="color" id="colorBox1"  value="#F37335"/>
+            <input type="range" name="" min="0" max="100" id="break1-color" class="slider" value="0" > 
+            </div>
+
+            <div id="div2-color">
+            <label for="top-left">Color 2</label>
+            <input type="color" id="colorBox2"  value="#FDC830"/>
+            <input type="range" name="" min="0" max="100" id="break2-color" class="slider" value="50" > 
+            </div>
+
+            <div id="div3-color">
+            <label for="Top Left">Color 3</label>
+            <input type="color" id="colorBox3"  value="#11998e"/>
+            <input type="range" name="" min="0" max="100" id="break3-color" class="slider" value="0" > 
+            </div>
+
+            <div id="div4-color">
+            <label for="Top Left">Color 4</label>
+            <input type="color" id="colorBox4"  value="#0575E6"/>
+            <input type="range" name="" min="0" max="100" id="break4-color" class="slider" value="100" > 
+            </div>
+
+            <!-- <label for="Top Left">Blur Radius</label>
+            <input type="range" name="" min="0" max="100" id="bottom-left" class="slider" value="0" > 
+
+            <label for="Top Left">Spread Radius</label>
+            <input type="range" name="" min="-50" max="50" id="bottom-right" class="slider" value="0"> 
+         -->
+
+        </div>
+    </div>
+
+    <div class="second-section">
+
+        <div class="content">
+            <div id="demo-div">
+
+            </div>
+
+            <div id="code-div">
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
