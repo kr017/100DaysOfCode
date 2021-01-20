@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Chela One', cursive;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+}
+  
+input{
+    margin: 10px;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    /* font-weight: 600; */
+    padding: 20px;
+    
+}
+
+.container{
+    width: 100%;
+    justify-content:center ;
+    margin: auto 1%;
+    display: flex;
+}
+.slider-container{
+    /* background-color: white; */
+    padding: 10px;
+    color:black
+}
+.content{
+    padding: 10px 10px;
+}
+
+
+.first-section{
+    width: 50%;
+    height: 500px;   
+    background-color: white;
+    margin: 0px 1%;
+
+}
+.second-section{
+    width: 50%;
+    height: 500px;    
+    background-color: white;
+    margin: 0px 1%;
+}
+
+.slider{
+    width: auto;
+    height: 25px;
+    background:white;
+    outline: none;
+    opacity: 0.5;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+#demo-div{
+    height:300px;
+    width:300px;
+    
+    margin: auto;
+    background-color: yellow;
+    /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+
+    /* background-color: rgb(231, 166, 26); */
+}
+#code-div{
+    height: auto;
+    color: black;
+}
+
+#div3-color, #div4-color{
+    display: none;
+}
